@@ -1,0 +1,16 @@
+{
+  "_name" : "Falafel",
+  "_class" : "VEGIE",
+  "_origin" : "MIDLE_EASTERN",
+  "_category" : "STARTER",
+  "_ingredients" : [ {
+    "_name" : "Chick Peas",
+    "_quantity" : 1.0,
+    "_units" : "CUP"
+  }, {
+    "_name" : "Parsly",
+    "_quantity" : 10.0,
+    "_units" : "OUNCE"
+  } ],
+  "_direction" : null
+}

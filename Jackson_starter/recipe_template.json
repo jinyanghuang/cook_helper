@@ -1,0 +1,29 @@
+{
+  "_name" : "test recipe",
+  "_class" : "SEAFOOD" ,
+  "_origin" : "CHINESE" ,
+  "_category" : "MAIN_DISH" ,
+  "_ingredients" : [
+    {
+       "_name" : "Shrimp"     ,
+       "_quantity" : "1"      ,
+       "_units" : "KILO_GRAM" 
+    },
+    {
+       "_name" : "sault"      ,
+       "_quantity" : "1"      ,
+       "_units" : "TEA_SPOON" 
+    },
+    {
+       "_name" : "onion"  ,
+       "_quantity" : "2"  ,
+       "_units" : "PIECE" 
+    }
+  ],
+  "_direction" : [
+     "1. step1"    ,
+     "2. step2"    ,
+     "3. step3"    ,
+     "4. step4"    
+  ]
+}
