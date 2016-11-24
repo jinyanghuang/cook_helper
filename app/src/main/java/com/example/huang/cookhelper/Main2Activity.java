@@ -73,7 +73,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
             }
 
             Recipe addrecipe = new Recipe((eTextname.getText().toString()), "main class", type.getSelectedItem().toString(), category.getSelectedItem().toString(), inglist, (eTextcook.getText().toString()), (eTextprep.getText().toString()), (eTextcal.getText().toString()), (eTextstep.getText().toString()));
-
+            addrecipe.writeRecipe();
             // System.out.println(addrecipe);
         }
             catch ( Exception e){

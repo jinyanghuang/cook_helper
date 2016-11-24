@@ -1,7 +1,11 @@
 package com.example.huang.cookhelper;
 
 import java.util.ArrayList;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+import java.io.*;
+import java.util.List;
 /**
  * Created by saifzabarah on 2016-11-18.
  */
@@ -62,5 +66,20 @@ public class Recipe {
         this.cal=cal;
         this.cook=cook;
 
+    }
+
+    public void writeRecipe(){
+        GsonBuilder builder = new GsonBuilder();
+        Gson gson = builder.create();
+        System.out.println(this);
+      try {
+         String jsonString = gson.toJson(this);
+         System.out.println(jsonString);
+         PrintWriter writer = new PrintWriter(this.getName() + ".json", "UTF-8");
+         writer.println(jsonString);
+         writer.close();
+      } catch (Exception e){
+         System.out.println("Exception" + e);
+      }
     }
 }
