@@ -70,6 +70,7 @@ public class Recipe {
 
     public void writeRecipe(){
         GsonBuilder builder = new GsonBuilder();
+        builder.setPrettyPrinting().serializeNulls();
         Gson gson = builder.create();
         System.out.println(this);
       try {
